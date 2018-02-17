@@ -8,4 +8,14 @@
   <li><%= @restaurant.category %></li>
 </ul>
 
+<%= link_to "Review", new_restaurant_review_path(@restaurant) %>
 <%= link_to "Go back to All Restaurants", restaurants_path %>
+
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+  <li>
+    <p>Rating: <%= review.rating %></p>
+    <p>Comment: <%= review.content %></p>
+  </li>
+  <% end %>
+</ul>
