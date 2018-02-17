@@ -37,6 +37,9 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
+# Seeding
+gem 'faker'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
